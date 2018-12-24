@@ -1,7 +1,7 @@
 // from https://stackoverflow.com/questions/13/determine-a-users-timezone
 const timezone = -(new Date().getTimezoneOffset()); //in minutes
 
-const now = new Date('12/26/' + (new Date()).getUTCFullYear()).getTime(); //Date.now(); // + timezone * 60 * 1000;
+const now = Date.now(); // + timezone * 60 * 1000;
 const christmas = new Date('12/25/' + (new Date()).getUTCFullYear()).getTime(); // + timezone * 60 * 1000;
 
 function diffDays(fromMs, toMs) {
