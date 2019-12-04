@@ -1,3 +1,6 @@
+let fonts = ["Mogra", "Oleo Script Swash Caps", "Shrikhand", "Damion", "Calistoga"];
+document.getElementsByTagName("body")[0].style.fontFamily = fonts[Math.floor(Math.random()*5)];
+
 // from https://stackoverflow.com/questions/13/determine-a-users-timezone
 const timezone = -(new Date().getTimezoneOffset()); //in minutes
 
