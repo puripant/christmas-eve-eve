@@ -9,7 +9,7 @@ function diffDays(fromMs, toMs) {
 }
 
 let eve = document.querySelector('#eve');
-const eveNum = 300; //((Math.ceil(diffDays(now, christmas)) % 365) + 365) % 365;
+const eveNum = ((Math.ceil(diffDays(now, christmas)) % 365) + 365) % 365;
 console.log(diffDays(now, christmas));
 for (let i = 0; i < eveNum; i++) {
   if (i % 2 === 0) {
